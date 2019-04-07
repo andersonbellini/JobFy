@@ -1,15 +1,17 @@
 {
-  "name": "JobFy",
+  "name": "Jobfy",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Anderson Vinicius Bellini",
   "license": "MIT",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "ejs": "^2.6.1",
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "sqlite": "^3.0.3"
   }
 }
