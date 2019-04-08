@@ -6,13 +6,22 @@ const path = require("path");
 
 const sqlite = require("sqlite");
 
-const dbConnection = sqlite.open(
-  path.resolve(__dirname, "banco.sqlite", { Promise })
-);
+const dbConnection = sqlite.open(path.resolve(__dirname, "banco.sqlite"), {
+  Promise
+});
 
 //const dbConnection = sqlite.open("banco.sqlite", { Promise }); // Use Local
 
 const port = process.env.PORT || 3000; //Config ZEIT
+
+app.use("/admin", (req, res, next) => {
+  //console.log(req.hostname);
+  if (req.hostname === "localhost") {
+    next();
+  } else {
+    res.send("Not allowed");
+  }
+});
 
 app.set("views", path.join(__dirname, "views"));
 
