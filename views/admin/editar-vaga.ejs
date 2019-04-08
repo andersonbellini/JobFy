@@ -16,7 +16,8 @@
            <select name="categoria">
            <% categorias.forEach(categoria => { %>
                 <option value="<%= categoria.id %>" <% if(categoria.id == vaga.categoria){ %>selected <% } %>><%- categoria.categoria%></option>
-                <% }) %>               
+            <% }) %>
+
            </select>
            <br>
             
