@@ -5,5 +5,8 @@ Project Created to use EJS to using sample.
 
 Created By Anderson V. Bellini
 
-Can you see this application running ?
+Do you like to see this application sample running ?
 Look here: https://bit.ly/2WTqQvu
+
+Fyi:
+The admin area of this example is limited to use only on localhost...
