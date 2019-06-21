@@ -16,11 +16,11 @@ const port = process.env.PORT || 3000; //Config ZEIT
 
 app.use("/admin", (req, res, next) => {
   //console.log(req.hostname);
-  if (req.hostname === "localhost") {
-    next();
-  } else {
+  //if (req.hostname === "localhost") {
+  //  next();
+  //} else {
     res.send("Not allowed");
-  }
+  //}
 });
 
 app.set("views", path.join(__dirname, "views"));
